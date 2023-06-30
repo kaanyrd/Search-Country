@@ -40,21 +40,26 @@ function Form() {
     countryRef.current.value = "";
   };
   // console.log(country);
-  console.log(neigbourCountry);
+  // console.log(neigbourCountry);
   return (
     <div>
-      <h1>Form.js</h1>
-      <form onSubmit={onSubmitHandler}>
+      <form className={classes.form} onSubmit={onSubmitHandler}>
         <div className={classes.formControl}>
-          <label>Your Country</label>
-          <input type="text" ref={countryRef} />
+          <input
+            className={classes.input}
+            placeholder="Country Name..."
+            type="text"
+            ref={countryRef}
+          />
         </div>
-        <button type="submit">Search !</button>
+        <button className={classes.submitBtn} type="submit">
+          Search !
+        </button>
       </form>
-      <hr />
-      <Country country={country} />
-      <BorderCountries neigbourCountry={neigbourCountry} />
-      <hr />
+      <div className={classes.content}>
+        <Country country={country} />
+        <BorderCountries neigbourCountry={neigbourCountry} />
+      </div>
     </div>
   );
 }

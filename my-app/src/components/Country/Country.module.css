@@ -1,4 +1,74 @@
+.country {
+  border: 3px solid green;
+  border-radius: 20px;
+  padding: 0.5rem;
+  min-height: 40rem;
+}
+.countryTitle {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.mainTitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.littleTitle {
+  text-decoration: underline;
+}
+.imgSelf {
+  border: 3px solid green;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
 .img {
+  border: 3px solid black;
   width: 100%;
   display: block;
+  border-radius: 10px;
+  height: 12rem;
 }
+.countryContent {
+  text-align: center;
+  position: relative;
+  perspective: 1500px;
+  transition: all 1s linear;
+}
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  visibility: visible;
+}
+.frontSide {
+  background-color: tomato;
+  transition: all 1s linear;
+}
+.backSide {
+  background-color: blue;
+  transition: all 1s linear;
+  transform: rotateY(-180deg);
+}
+
+.frontSideActive {
+  transform: rotateY(-180deg);
+  transition: all 1s linear;
+}
+.backSideActive {
+  transform: rotateY(0deg);
+  transition: all 1s linear;
+}
+/* 
+.countryContent:hover .frontSide {
+  transform: rotateY(-180deg);
+}
+.countryContent:hover .backSide {
+  transform: rotateY(0deg);
+} */

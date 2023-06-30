@@ -1,0 +1,41 @@
+.form {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.input {
+  padding-left: 0.4rem;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e4e4e4;
+}
+.submitBtn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: all 0.2s linear;
+}
+.submitBtn:hover {
+  background-color: #d5d5d5;
+}
+.input:focus {
+  outline: none;
+}
+.form > * {
+  /* border: 3px solid black; */
+}
+.formControl {
+  /* border: 3px solid black; */
+}
+
+.content {
+  border: 3px solid black;
+  padding: 0.5rem 0;
+}

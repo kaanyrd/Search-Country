@@ -1,9 +1,10 @@
 import React from "react";
+import classes from "./Header.module.css";
 
 function Header() {
   return (
-    <div>
-      <h1>Header.js</h1>
+    <div className={classes.title}>
+      <h1>FIND YOUR COUNTRY</h1>
     </div>
   );
 }
