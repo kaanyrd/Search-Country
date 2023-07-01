@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./BorderCountries.module.css";
 import BorderItems from "./BorderItems";
 
 function BorderCountries(props) {

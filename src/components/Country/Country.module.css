@@ -1,0 +1,130 @@
+.country {
+  border: 3px solid green;
+  border-radius: 20px;
+}
+.countryContent {
+  min-height: 40rem;
+}
+.countryTitle {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.mainTitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.littleTitle {
+  text-decoration: underline;
+}
+.imgSelf {
+  /* border: 3px solid green; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.img {
+  /* border: 3px solid black; */
+  max-width: fit-content;
+  display: block;
+  border-radius: 10px;
+  height: 15rem;
+  margin: 0 auto;
+  padding: 0 0.2rem;
+}
+.countryContent {
+  text-align: center;
+  position: relative;
+  perspective: 1500px;
+  transition: all 0.5s linear;
+}
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  visibility: visible;
+}
+.cardInside {
+  /* border: 3px solid red; */
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+  /* FIXME */
+}
+.cardInside > * {
+  /* border: 3px solid black; */
+}
+.frontSide {
+  background-color: #cdf2fe;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+}
+.backSide {
+  border-radius: 20px;
+  background-color: pink;
+  transition: all 0.5s linear;
+  transform: rotateY(-180deg);
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.backSide > * {
+  border: 3px solid black;
+}
+.frontSideActive {
+  transform: rotateY(-180deg);
+  transition: all 0.5s linear;
+}
+.backSideActive {
+  transform: rotateY(0deg);
+  transition: all 0.5s linear;
+}
+
+.countryInfo {
+  /* border: 3px solid green; */
+}
+.countryInfo > * {
+  /* border: 3px solid red; */
+}
+.control {
+  /* border: 3px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.control > * {
+  /* border: 3px solid red; */
+}
+.iconSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+.moreBtn {
+  padding: 1rem 0;
+}
+.moreBtnSelf {
+  padding: 0.4rem 0.9rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.moreBtnSelf:hover {
+  background-color: #efefef;
+}
