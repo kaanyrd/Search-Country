@@ -30,7 +30,8 @@
 }
 .imgSelf {
   /* border: 3px solid green; */
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   height: 100%;
   object-fit: cover;
   display: block;
