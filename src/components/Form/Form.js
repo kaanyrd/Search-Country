@@ -58,7 +58,7 @@ function Form() {
       </form>
       <div className={classes.content}>
         <Country country={country} />
-        <BorderCountries neigbourCountry={neigbourCountry} />
+        <BorderCountries country={country} neigbourCountry={neigbourCountry} />
       </div>
     </div>
   );

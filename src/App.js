@@ -12,7 +12,7 @@ function App() {
     <div className={classes.app}>
       <div className={classes.mainApp}>
         <Header />
-        <hr />
+        {/* <hr /> */}
         <Form lifting={lifting} />
       </div>
     </div>
