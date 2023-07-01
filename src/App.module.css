@@ -2,10 +2,11 @@
   /* border: 3px solid black; */
   min-height: 100vh;
   padding: 1rem 0;
+  background-color: #f7bf6c;
 }
 .mainApp {
   /* border: 3px solid red; */
-  width: 90vw;
+  width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
   /* background-color: #dfe0e1; */

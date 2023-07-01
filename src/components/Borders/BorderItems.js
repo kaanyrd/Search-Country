@@ -36,7 +36,7 @@ function BorderItems(props) {
         <div className={classes.countryTitle}>
           <h1 className={classes.mainTitle}>
             <FlagIcon />
-            {props.country?.name.common}
+            {props.index + 1} - {props.country?.name.common}
           </h1>
           <em className={classes.littleTitle}>
             (Official Name:{props.country?.name.official})
@@ -65,7 +65,7 @@ function BorderItems(props) {
                 <LanguageIcon />
                 <h1>Language</h1>
               </div>
-              <h2>{languages.join(" - ")}</h2>
+              <h3>{languages.join(" - ")}</h3>
             </div>
             <div className={classes.control}>
               <div className={classes.iconSide}>
@@ -74,7 +74,7 @@ function BorderItems(props) {
               </div>
 
               <h2>
-                {(props.country?.population / 1000000).toFixed(1)}
+                {`${(props.country?.population / 1000000).toFixed(1)} `}
                 million
               </h2>
             </div>

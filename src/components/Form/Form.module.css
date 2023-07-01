@@ -1,11 +1,12 @@
 .form {
   /* border: 3px solid red; */
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 1rem 0.5rem;
-  justify-content: center;
-  align-items: center;
   margin-top: 1rem;
+  max-width: 400px;
+  align-items: center;
+  margin: 1rem auto;
 }
 .input {
   padding-left: 0.4rem;
@@ -13,6 +14,7 @@
   border: none;
   border-radius: 5px;
   background-color: #e4e4e4;
+  width: 100%;
 }
 .submitBtn {
   padding: 0.4rem 0.8rem;

@@ -11,8 +11,8 @@ function BorderCountries(props) {
       </h1>
       <div className={classes.boundariesContent}>
         <ul>
-          {props.neigbourCountry.map((item) => (
-            <BorderItems country={item} />
+          {props.neigbourCountry.map((item, index) => (
+            <BorderItems country={item} index={index} />
           ))}
         </ul>
       </div>

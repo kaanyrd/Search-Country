@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import classes from "./Form.module.css";
 import Country from "../Country/Country";
 import BorderCountries from "../Borders/BorderCountries";
+import SearchIcon from "@mui/icons-material/Search";
 
 function Form() {
   const [country, setCountry] = useState(null);
@@ -10,6 +11,7 @@ function Form() {
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
+    if (!countryRef.current.value) return;
     try {
       setNeighbourCountry([]);
       const countryResponse = await fetch(
@@ -53,7 +55,7 @@ function Form() {
           />
         </div>
         <button className={classes.submitBtn} type="submit">
-          Search !
+          <SearchIcon />
         </button>
       </form>
       <div className={classes.content}>
