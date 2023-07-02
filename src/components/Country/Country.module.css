@@ -8,8 +8,8 @@
   position: relative;
   perspective: 1500px;
   transition: all 0.5s linear;
-  min-height: 43rem;
-  width: 90%;
+  min-height: 44.5rem;
+  /* width: 90%; */
   margin: 0 auto 2rem auto;
 }
 .countryMainInfo {

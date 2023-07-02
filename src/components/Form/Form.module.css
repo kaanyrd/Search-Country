@@ -42,6 +42,9 @@
 
 .content {
   /* border: 3px solid black; */
+  max-width: 1170px;
+  width: 90vw;
+  margin: 0 auto;
   padding: 0.5rem 0;
 }
 

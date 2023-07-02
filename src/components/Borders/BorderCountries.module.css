@@ -3,3 +3,17 @@
   margin: 2rem 0;
   color: #094067;
 }
+.listBorders {
+  /* border: 3px solid black; */
+  display: grid;
+  /* width: 80%; */
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 3rem 1.5rem;
+}
+.listItem {
+  /* border: 3px solid red; */
+  /* background-color: tomato; */
+  /* background-color: #cdcecf; */
+  min-height: 35rem;
+}

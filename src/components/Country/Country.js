@@ -134,7 +134,6 @@ function Country(props) {
                 target="blank"
                 href={props.country?.maps.googleMaps}
               >
-                {/* <MapIcon /> */}
                 To See On Map
               </a>
               <div>

@@ -3,11 +3,20 @@ import BorderItems from "./BorderItems";
 import classes from "./BorderCountries.module.css";
 
 function BorderCountries(props) {
+  // let Content = () => {
+  //   if (props.country?.name !== undefined) {
+  //     if (props.country?.borders.length === 1) {
+  //       return <div>{props.country?.name.common}'s Border Country</div>;
+  //     } else if (props.country?.borders.length > 1) {
+  //       return <div>{props.country?.name.common}'s Border Countries</div>;
+  //     }
+  //   }
+  //   return null;
+  // };
   let Content = () => {
-    if (
-      props.country?.borders.length === 1 &&
-      props.country.name !== undefined
-    ) {
+    if (props.country?.name !== undefined) {
+      return;
+    } else if (props.country?.borders.length === 1) {
       return <div>{props.country?.name.common}'s Border Country</div>;
     } else if (
       props.country?.borders.length > 1 &&
@@ -24,10 +33,15 @@ function BorderCountries(props) {
       <h1 className={classes.title}>
         <Content />
       </h1>
-      <div className={classes.boundariesContent}>
-        <ul>
+      <div>
+        <ul className={classes.listBorders}>
           {props.neigbourCountry.map((item, index) => (
-            <BorderItems key={index} country={item} index={index} />
+            <BorderItems
+              className={classes.listItem}
+              key={index}
+              country={item}
+              index={index}
+            />
           ))}
         </ul>
       </div>

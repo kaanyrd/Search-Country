@@ -28,17 +28,17 @@ function BorderItems(props) {
   };
 
   return (
-    <div className={classes.countryContent}>
+    <div className={`${classes.countryContent} ${props.className}`}>
       <div
         className={`${classes.side} ${classes.frontContent} ${
           cardFlip ? classes.frontSideActive : classes.frontSide
         }`}
       >
         <div className={classes.countryTitle}>
-          <h1 className={classes.mainTitle}>
+          <h2 className={classes.mainTitle}>
             <FlagIcon />
             {props.index + 1} - {props.country?.name.common}
-          </h1>
+          </h2>
           <em className={classes.littleTitle}>
             (Official Name:{props.country?.name.official})
           </em>
@@ -57,27 +57,27 @@ function BorderItems(props) {
             <div className={classes.control}>
               <div className={classes.iconSide}>
                 <CapitalIcon />
-                <h1>Capital</h1>
+                <h2>Capital</h2>
               </div>
-              <h2>{props.country?.capital}</h2>
+              <h3>{props.country?.capital}</h3>
             </div>
             <div className={classes.control}>
               <div className={classes.iconSide}>
                 <LanguageIcon />
-                <h1>Language</h1>
+                <h2>Language</h2>
               </div>
               <h3>{languages.join(" - ")}</h3>
             </div>
             <div className={classes.control}>
               <div className={classes.iconSide}>
                 <PopulationIcon />
-                <h1>Population</h1>
+                <h2>Population</h2>
               </div>
 
-              <h2>
+              <h3>
                 {`${(props.country?.population / 1000000).toFixed(1)} `}
                 million
-              </h2>
+              </h3>
             </div>
             <div className={classes.moreBtn}>
               <button className={classes.moreBtnSelf} onClick={cardFlipHandler}>
@@ -87,12 +87,12 @@ function BorderItems(props) {
           </div>
         </div>
       </div>
+      {/* FIXME BACKSIDE */}
       <div
         className={`${classes.side} ${classes.backSide} ${
           cardFlip ? classes.backSideActive : ""
         }`}
       >
-        {/* //BACKSIDE */}
         <div className={classes.backControl}>
           <div className={classes.backIcons}>
             <TimeZone />
@@ -100,7 +100,6 @@ function BorderItems(props) {
           </div>
           <h2>{props.country?.timezones[0]}</h2>
         </div>
-        <div className={classes.divider}></div>
         <div className={classes.backControl}>
           <div className={classes.backIcons}>
             <DomainLevel />
@@ -108,7 +107,6 @@ function BorderItems(props) {
           </div>
           <h2>{props.country?.tld}</h2>
         </div>
-        <div className={classes.divider}></div>
         <div className={classes.backControl}>
           <div className={classes.backIcons}>
             <ContinentIcon />
@@ -116,14 +114,12 @@ function BorderItems(props) {
           </div>
           <h2>{props.country?.region}</h2>
         </div>
-        <div className={classes.divider}></div>
         <div className={classes.cardFooter}>
           <a
             className={classes.mapBtn}
             target="blank"
             href={props.country?.maps.googleMaps}
           >
-            <MapIcon />
             To See On Map
           </a>
           <div>
