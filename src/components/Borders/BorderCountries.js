@@ -4,12 +4,18 @@ import classes from "./BorderCountries.module.css";
 
 function BorderCountries(props) {
   let Content = () => {
-    if (props.country === undefined) {
-      return <div></div>;
-    } else if (props.country?.borders.length === 1) {
+    if (
+      props.country?.borders.length === 1 &&
+      props.country.name !== undefined
+    ) {
       return <div>{props.country?.name.common}'s Border Country</div>;
-    } else if (props.country?.borders.length > 1) {
+    } else if (
+      props.country?.borders.length > 1 &&
+      props.country.name !== undefined
+    ) {
       return <div>{props.country?.name.common}'s Border Countries</div>;
+    } else if (props.country !== undefined) {
+      return <div></div>;
     }
   };
 
