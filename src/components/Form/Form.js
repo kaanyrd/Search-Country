@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import classes from "./Form.module.css";
 import Country from "../Country/Country";
 import BorderCountries from "../Borders/BorderCountries";
@@ -28,12 +28,10 @@ function Form() {
         if (!neighbours) {
           throw new Error("There aren't any neighbour...");
         }
-        // console.log(neighbours);
         const neighbourResponse = await fetch(
           `https://restcountries.com/v3.1/alpha/${neighbours}`
         );
         const neighbourData = await neighbourResponse.json();
-        // setNeighbourCountry(neighbourData);
         setNeighbourCountry((prevState) => [...prevState, neighbourData[0]]);
       }
     } catch (error) {
@@ -41,38 +39,7 @@ function Form() {
     }
     countryRef.current.value = "";
   };
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setNeighbourCountry([]);
-        const countryResponse = await fetch(
-          `https://restcountries.com/v3.1/name/turkey`
-        );
-        if (!countryResponse.ok) {
-          throw new Error("You searched for a falsy value");
-        }
-        const data = await countryResponse.json();
-        setCountry(data[0]);
-        for (let i = 0; i < data[0].borders.length; i++) {
-          const neighbourCode = data[0].borders[i];
-          if (!neighbourCode) {
-            throw new Error("There aren't any neighbors...");
-          }
-          const neighbourResponse = await fetch(
-            `https://restcountries.com/v3.1/alpha/${neighbourCode}`
-          );
-          const neighbourData = await neighbourResponse.json();
-          setNeighbourCountry((prevState) => [...prevState, neighbourData[0]]);
-        }
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
 
-    fetchData();
-  }, []);
-  // console.log(country);
-  // console.log(neigbourCountry);
   return (
     <div>
       <form className={classes.form} onSubmit={onSubmitHandler}>

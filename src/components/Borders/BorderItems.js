@@ -26,6 +26,7 @@ function BorderItems(props) {
   const cardFlipHandler = () => {
     setCardFlip((prevState) => !prevState);
   };
+
   return (
     <div className={classes.countryContent}>
       <div

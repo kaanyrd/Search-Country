@@ -1,6 +1,7 @@
 .country {
   /* border: 3px solid green; */
   border-radius: 20px;
+  color: #094067;
 }
 .countryContent {
   text-align: center;
@@ -34,7 +35,7 @@
   max-width: 360px;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   border-radius: 10px;
 }
@@ -58,7 +59,7 @@
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   visibility: visible;
 }
 .cardInside {
@@ -80,14 +81,15 @@
   /* border: 3px solid black; */
 }
 .frontSide {
-  background-color: #f9e7cc;
-  color: black;
+  background-color: #aaddff;
+  color: #094067;
   border-radius: 20px;
   transition: all 0.5s linear;
 }
 .backSide {
   border-radius: 20px;
-  background-color: #f9e7cc;
+  background-color: #67bdff;
+  color: #094067;
   transition: all 0.5s linear;
   transform: rotateY(-180deg);
   /* border: 3px solid red; */
@@ -135,7 +137,7 @@
   align-items: center;
   justify-content: center;
   -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .moreBtn {
   padding: 1rem 0;
@@ -143,13 +145,15 @@
 .moreBtnSelf {
   padding: 0.4rem 0.9rem;
   border: none;
-  background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  background-color: white;
+  color: #0165b2;
 }
 
 .moreBtnSelf:hover {
-  background-color: #efefef;
+  background-color: #158dea;
+  color: white;
 }
 
 .backIcons {
@@ -159,7 +163,7 @@
   align-items: center;
   justify-content: center;
   -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .backIcons > * {
   /* border: 3px solid red; */
@@ -173,9 +177,10 @@
 }
 .cardFooter > a {
   text-decoration: none;
-  color: black;
   font-size: 1.3rem;
-  border: 3px solid black;
+  border: none;
+  background-color: #094067;
+  color: #fff;
   margin-top: 0.5rem;
   border-radius: 10px;
   padding: 0.3rem 0.7rem;
@@ -183,34 +188,43 @@
 }
 
 .cardFooter > a:hover {
-  color: white;
-  background-color: black;
+  color: #094067;
+  background-color: #fff;
 }
 .backBtn {
   padding: 0.2rem 0.5rem;
   background-color: transparent;
-  border: 3px solid black;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: #0165b2;
 }
 .backBtn:hover {
+  background-color: #0165b2;
   color: white;
-  background-color: black;
 }
 .divider {
   /* height: 3px;
   width: 80%;
   margin: 0 auto 1rem auto;
   background-color: black; */
-  border-bottom: 3px dashed black;
+  border-bottom: 3px dashed #094067;
   margin: 1rem 0;
 }
 .mapBtn {
   display: flex;
   align-items: center;
   -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
+  display: inline-block;
+}
+
+.searchInfo {
+  color: #094067;
+  text-align: center;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 678px) {
   .countryContent {

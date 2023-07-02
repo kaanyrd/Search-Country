@@ -3,16 +3,25 @@ import BorderItems from "./BorderItems";
 import classes from "./BorderCountries.module.css";
 
 function BorderCountries(props) {
-  console.log(props.neigbourCountry);
+  let Content = () => {
+    if (props.country === undefined) {
+      return <div></div>;
+    } else if (props.country?.borders.length === 1) {
+      return <div>{props.country?.name.common}'s Border Country</div>;
+    } else if (props.country?.borders.length > 1) {
+      return <div>{props.country?.name.common}'s Border Countries</div>;
+    }
+  };
+
   return (
     <div className={classes.boundaries}>
       <h1 className={classes.title}>
-        {props.country?.name.common}'s Border Countries
+        <Content />
       </h1>
       <div className={classes.boundariesContent}>
         <ul>
           {props.neigbourCountry.map((item, index) => (
-            <BorderItems country={item} index={index} />
+            <BorderItems key={index} country={item} index={index} />
           ))}
         </ul>
       </div>
