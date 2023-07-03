@@ -1,5 +1,4 @@
 .country {
-  /* border: 3px solid green; */
   border-radius: 20px;
   color: #094067;
 }
@@ -9,7 +8,6 @@
   perspective: 1500px;
   transition: all 0.5s linear;
   min-height: 44.5rem;
-  /* width: 90%; */
   margin: 0 auto 2rem auto;
 }
 .countryMainInfo {
@@ -18,7 +16,6 @@
 .countryTitle {
   padding-top: 0.5rem;
   text-align: center;
-  /* margin-bottom: 0.5rem; */
 }
 .mainTitle {
   display: flex;
@@ -30,7 +27,6 @@
   text-decoration: underline;
 }
 .imgSelf {
-  /* border: 3px solid green; */
   width: 100%;
   max-width: 360px;
   height: 100%;
@@ -40,7 +36,6 @@
   border-radius: 10px;
 }
 .img {
-  /* border: 3px solid black; */
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -49,8 +44,6 @@
   height: 15rem;
   margin: 0 auto;
   padding: 0 0.2rem;
-}
-.countryContent {
 }
 .side {
   position: absolute;
@@ -63,13 +56,10 @@
   visibility: visible;
 }
 .cardInside {
-  /* border: 3px solid red; */
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  /* height: 100%; */
-  /* FIXME */
 }
 .frontContent {
   display: grid;
@@ -77,9 +67,7 @@
   grid-template-rows: auto auto;
   place-items: center;
 }
-.cardInside > * {
-  /* border: 3px solid black; */
-}
+
 .frontSide {
   background-color: #aaddff;
   color: #094067;
@@ -92,14 +80,10 @@
   color: #094067;
   transition: all 0.5s linear;
   transform: rotateY(-180deg);
-  /* border: 3px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-}
-.backSide > * {
-  /* border: 3px solid black; */
 }
 .frontSideActive {
   transform: rotateY(-180deg);
@@ -111,16 +95,12 @@
 }
 
 .countryInfo {
-  /* border: 3px solid green; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr auto;
 }
-.countryInfo > * {
-  /* border: 3px solid red; */
-}
+
 .control {
-  /* border: 3px solid green; */
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -129,9 +109,7 @@
   margin-bottom: 0.3rem;
   border-bottom: 3px dashed black;
 }
-.control > * {
-  /* border: 3px solid red; */
-}
+
 .iconSide {
   display: flex;
   align-items: center;
@@ -157,7 +135,6 @@
 }
 
 .backIcons {
-  /* border: 3px solid black; */
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
@@ -165,9 +142,7 @@
   -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
 }
-.backIcons > * {
-  /* border: 3px solid red; */
-}
+
 .cardFooter {
   display: flex;
   justify-content: center;
@@ -206,10 +181,6 @@
   color: white;
 }
 .divider {
-  /* height: 3px;
-  width: 80%;
-  margin: 0 auto 1rem auto;
-  background-color: black; */
   border-bottom: 3px dashed #094067;
   margin: 1rem 0;
 }
@@ -228,11 +199,9 @@
 }
 @media screen and (min-width: 678px) {
   .countryContent {
-    /* border: 3px solid black; */
     min-height: 35rem;
   }
   .control {
-    /* border: 5px solid green; */
     gap: 0.5rem 3rem;
     justify-content: space-between;
     align-items: center;
@@ -240,11 +209,7 @@
     /* margin-bottom: 0.3rem; */
   }
   .backSide {
-    /* border: 3px solid black; */
     padding: 0 1rem;
-  }
-  .backSide > * {
-    /* border: 3px solid red; */
   }
   .backControl {
     display: flex;
@@ -255,24 +220,17 @@
 
 @media screen and (min-width: 968px) {
   .control {
-    /* border: 3px solid green; */
     display: flex;
     flex-direction: row;
     align-items: center;
     align-self: center;
   }
   .cardInside {
-    /* border: 3px solid black; */
     display: flex;
     align-items: center;
     margin-top: 1rem;
     padding: 0.5rem 0;
     justify-content: space-around;
-
-    /* FIXME */
-  }
-  .cardInside > * {
-    /* border: 3px solid black; */
   }
   .countryContent {
     min-height: 23rem;

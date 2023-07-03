@@ -3,7 +3,6 @@
 }
 .img {
   width: 100%;
-  /* border: 3px solid black; */
   display: flex;
   justify-content: center;
   height: 150px;
@@ -15,13 +14,11 @@
   max-width: 250px;
   margin: 0.5rem 0;
   border-radius: 10px;
-  /* border: 3px solid red; */
 }
 .countryTitle {
   text-align: center;
 }
 .frontContent {
-  /* border: 3px solid black; */
   height: 100%;
   padding: 1rem 0.5rem;
   display: grid;
@@ -29,34 +26,19 @@
   grid-template-rows: auto 1fr;
 }
 .cardInside {
-  /* border: 3px solid black; */
   display: grid;
   grid-template-rows: auto 1fr;
   row-gap: 1rem;
 }
-.cardInside > * {
-  /* border: 3px solid red; */
-}
 .countryInfo {
-  /* border: 3px solid black; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr auto;
   text-align: center;
 }
-
-.countryInfo > * {
-  /* border: 3px solid red; */
-}
-
 .iconSide {
-  /* border: 3px solid black; */
   text-align: center;
 }
-.iconSide > * {
-  /* border: 3px solid red; */
-}
-
 .frontSideActive {
   transform: rotateY(-180deg);
   transition: all 0.5s linear;
@@ -126,28 +108,18 @@
 }
 
 .control {
-  /* border-bottom: 2px dashed black; */
   margin: 0.1rem 0;
 }
 .backSide {
-  /* border: 3px solid black; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   align-items: center;
 }
-.backSide > * {
-  /* border: 3px solid red; */
-}
-
 .cardFooter {
-  /* border: 3px solid black; */
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
-}
-.cardFooter > * {
-  /* border: 3px solid red; */
 }
 .cardFooter > a {
   display: inline-block;

@@ -1,13 +1,10 @@
 .app {
-  /* border: 3px solid black; */
   min-height: 100vh;
   padding: 1rem 0;
   background-color: #fffffe;
 }
 .mainApp {
-  /* border: 3px solid red; */
   width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
-  /* background-color: #dfe0e1; */
 }

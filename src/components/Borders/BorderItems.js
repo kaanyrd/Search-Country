@@ -7,7 +7,6 @@ import PopulationIcon from "@mui/icons-material/Groups2";
 import TimeZone from "@mui/icons-material/AccessTime";
 import DomainLevel from "@mui/icons-material/SettingsEthernet";
 import ContinentIcon from "@mui/icons-material/SouthAmerica";
-import MapIcon from "@mui/icons-material/Map";
 
 function BorderItems(props) {
   const [cardFlip, setCardFlip] = useState(false);

@@ -1,5 +1,4 @@
 .form {
-  /* border: 3px solid red; */
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 0.5rem;
@@ -36,12 +35,8 @@
 .input:focus {
   outline: none;
 }
-.form > * {
-  /* border: 3px solid black; */
-}
 
 .content {
-  /* border: 3px solid black; */
   max-width: 1170px;
   width: 90vw;
   margin: 0 auto;

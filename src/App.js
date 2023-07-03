@@ -12,7 +12,6 @@ function App() {
     <div className={classes.app}>
       <div className={classes.mainApp}>
         <Header />
-        {/* <hr /> */}
         <Form lifting={lifting} />
       </div>
     </div>

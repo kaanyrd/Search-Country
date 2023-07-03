@@ -30,9 +30,7 @@
   display: grid;
   place-items: center;
 }
-.content > * {
-  /* border: 3px solid red; */
-}
+
 .closeButton {
   padding: 0.5rem 1.2rem;
   cursor: pointer;
