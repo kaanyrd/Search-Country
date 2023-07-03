@@ -28,7 +28,6 @@ function Form() {
       const countryResponse = await fetch(
         `https://restcountries.com/v3.1/name/${countryRef.current.value}`
       );
-      console.log(countryResponse);
       if (countryResponse.ok) {
         setNeighbourCountry([]);
         const data = await countryResponse.json();

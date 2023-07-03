@@ -3,19 +3,11 @@ import BorderItems from "./BorderItems";
 import classes from "./BorderCountries.module.css";
 
 function BorderCountries(props) {
-  // let Content = () => {
-  //   if (props.country?.name !== undefined) {
-  //     if (props.country?.borders.length === 1) {
-  //       return <div>{props.country?.name.common}'s Border Country</div>;
-  //     } else if (props.country?.borders.length > 1) {
-  //       return <div>{props.country?.name.common}'s Border Countries</div>;
-  //     }
-  //   }
-  //   return null;
-  // };
   let Content = () => {
-    if (props.country?.name !== undefined) {
-      return;
+    if (!props.country?.borders && props.country) {
+      return (
+        <div>{props.country?.name.common} Has Not Any Border Country...</div>
+      );
     } else if (props.country?.borders.length === 1) {
       return <div>{props.country?.name.common}'s Border Country</div>;
     } else if (
