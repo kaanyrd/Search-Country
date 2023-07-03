@@ -9,6 +9,13 @@
   transition: all 0.5s linear;
   min-height: 44.5rem;
   margin: 0 auto 2rem auto;
+  transform: scale(0);
+  -webkit-animation-name: Item;
+  animation-name: Item;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .countryMainInfo {
   margin-bottom: 0.5rem;
@@ -238,5 +245,32 @@
   .frontContent {
     display: grid;
     place-items: stretch;
+  }
+}
+
+@-webkit-keyframes Item {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes Item {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes ItemDeleting {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }

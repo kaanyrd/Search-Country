@@ -26,7 +26,7 @@ function Form() {
     if (!countryRef.current.value) return;
     try {
       const countryResponse = await fetch(
-        `https://restcountries.com/v3.1/name/${countryRef.current.value}`
+        `https://restcountries.com/v3.1/name/${countryRef.current.value.trim()}`
       );
       if (countryResponse.ok) {
         setNeighbourCountry([]);
