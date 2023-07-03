@@ -1,6 +1,3 @@
-.countryContent {
-  border-radius: 10px;
-}
 .img {
   width: 100%;
   display: flex;
@@ -79,6 +76,14 @@
   position: relative;
   perspective: 1500px;
   transition: all 0.5s linear;
+  height: 38rem;
+  border-radius: 10px;
+  -webkit-animation-name: Item;
+  animation-name: Item;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 .mainTitle {
   display: flex;
@@ -155,4 +160,22 @@
 .mapBtn:hover {
   color: #094067;
   background-color: #fff;
+}
+
+@-webkit-keyframes Item {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes Item {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
