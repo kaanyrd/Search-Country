@@ -7,7 +7,7 @@
   position: relative;
   perspective: 1500px;
   transition: all 0.5s linear;
-  min-height: 44.5rem;
+  min-height: 42rem;
   margin: 0 auto 2rem auto;
   transform: scale(0);
   -webkit-animation-name: Item;
@@ -48,7 +48,7 @@
   max-width: fit-content;
   display: block;
   border-radius: 10px;
-  height: 15rem;
+  height: 12rem;
   margin: 0 auto;
   padding: 0 0.2rem;
 }
@@ -206,7 +206,7 @@
 }
 @media screen and (min-width: 678px) {
   .countryContent {
-    min-height: 35rem;
+    min-height: 33rem;
   }
   .control {
     gap: 0.5rem 3rem;
@@ -240,7 +240,7 @@
     justify-content: space-around;
   }
   .countryContent {
-    min-height: 23rem;
+    min-height: 18rem;
   }
   .frontContent {
     display: grid;
