@@ -74,7 +74,7 @@ function Country(props) {
                     <LanguageIcon />
                     <h1>Language</h1>
                   </div>
-                  <h2>{languages.join(" - ")}</h2>
+                  <h3>{languages.join(" - ")}</h3>
                 </div>
                 <div className={classes.control}>
                   <div className={classes.iconSide}>
